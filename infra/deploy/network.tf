@@ -93,7 +93,6 @@ resource "aws_subnet" "private_a" {
     Name = "${local.prefix}-private-a"
   }
 }
-
 resource "aws_subnet" "private_b" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.1.11.0/24"
