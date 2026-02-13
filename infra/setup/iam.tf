@@ -67,6 +67,8 @@ data "aws_iam_policy_document" "ecr" {
     effect = "Allow"
     actions = [
       "ecr:CompleteLayerUpload",
+      "ecr:BatchGetImage",
+      "ecr:GetDownloadUrlForLayer",
       "ecr:UploadLayerPart",
       "ecr:InitiateLayerUpload",
       "ecr:BatchCheckLayerAvailability",
