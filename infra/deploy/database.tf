@@ -29,7 +29,6 @@ resource "aws_security_group" "rds" {
     Name = "${local.prefix}-db-security-group"
   }
 }
-
 resource "aws_db_instance" "main" {
   identifier                 = "${local.prefix}-db"
   db_name                    = "recipe"
