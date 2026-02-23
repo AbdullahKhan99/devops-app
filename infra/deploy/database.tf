@@ -29,7 +29,7 @@ resource "aws_security_group" "rds" {
     ]
   }
 
-  
+
 
   tags = {
     Name = "${local.prefix}-db-security-group"
